@@ -1,0 +1,30 @@
+#include<stdio.h> // Includes the standard input/output library for functions like printf and scanf.
+#include<string.h> // Includes the string library for functions like strcpy.
+
+// Defines a structure named 'book' to store book information.
+struct book{
+    char title[30]; // Character array to store the book's title (maximum 30 characters).
+    char author[30]; // Character array to store the book's author (maximum 30 characters).
+    int publicationyear; // Integer variable to store the book's publication year.
+    double ISBN; // Double-precision floating-point variable to store the book's ISBN.
+    float price; // Float variable to store the book's price.
+    
+}book1,book2; // Declares two variables of the 'book' structure: book1 and book2.
+
+// Main function, where the program execution begins.
+int main(){
+    // Assigns values to the fields of the 'book1' structure.
+    strcpy(book1.title,"Introduction to programming"); // Copies the string "Introduction to programming" to the 'title' field of book1.
+    strcpy(book1.author,"John Smith"); // Copies the string "John Smith" to the 'author' field of book1.
+    book1.publicationyear=2022; // Assigns the value 2022 to the 'publicationyear' field of book1.
+    book1.ISBN=9780131103627; // Assigns the value 9780131103627 to the 'ISBN' field of book1.
+    book1.price=49.99; // Assigns the value 49.99 to the 'price' field of book1.
+
+    // Prints the information stored in the 'book1' structure.
+    printf("Title:%s\n",book1.title); // Prints the title of book1.
+    printf("Author:%s\n",book1.author); // Prints the author of book1.
+    printf("Publication year:%d\n",book1.publicationyear); // Prints the publication year of book1.
+    printf("ISBN:%lf\n",book1.ISBN); // Prints the ISBN of book1.
+    printf("Price:%f\n",book1.price); // Prints the price of book1.
+    return 0; // Returns 0 to indicate successful program execution.
+}
